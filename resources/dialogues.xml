@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<dialogues>
+    <dialogue>
+        <replique next="1"><!--0-->
+            <phrase texte="Hey !"/>
+            <phrase texte="..."/>
+            <phrase texte="*poke*"/>
+            <phrase texte="..."/>
+            <phrase texte="*poke*"/>
+        </replique>
+        <replique><!--1-->
+            <choix texte="Quoi..." next="2"/>
+            <choix texte="Non... Encore cinq minutes..." next="2"/>
+        </replique>
+        <replique next="3"><!--2-->
+            <phrase texte="Réveille-toi !"/>
+            <phrase texte="C'est le grand jour, le début d'une nouvelle aventure !"/>
+        </replique>
+        <replique><!--3-->
+            <choix texte="Hein ? Quel grand jour ?" next="4"/>
+        </replique>
+        <replique next="5"><!--4-->
+            <phrase texte="L'ovulation, bien sûr !"/>
+            <phrase texte="C'est aujourd'hui que tu vas être envoyé dans les trompes pour être fécondé !"/>
+        </replique>
+        <replique><!--5-->
+            <choix texte="Ah non, je veux pas. Laisse-moi tranquille." next="6"/>
+            <choix texte="Ah, c'est enfin arrivé !"/>
+        </replique>
+        <replique next="7"><!--6-->
+            <phrase texte="Oh ! Je ne t'ai pas porté 14 jours pour rien !"/>
+            <phrase texte="On a gagné la course contre les autres follicules."/>
+            <phrase texte="Maintenant, à toi de prendre tes responsabilités !"/>
+        </replique>
+        <replique><!--7-->
+            <choix texte="Bon, très bien..." next="8"/>
+        </replique>
+        <replique next="9"><!--8-->
+            <phrase texte="Et puis, je vais même devoir sécréter de la"/>
+            <phrase texte="progestérone après ton départ pour permettre"/>
+            <phrase texte="ta nidation."/>
+        </replique>
+    </dialogue>
+    <transition>
+
+    </transition>
+    <dialogue>
+
+    </dialogue>
+    <transition>
+
+    </transition>
+    <dialogue>
+        
+    </dialogue>
+</dialogues>
