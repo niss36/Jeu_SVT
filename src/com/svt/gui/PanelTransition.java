@@ -1,13 +1,15 @@
 package com.svt.gui;
 
+import org.w3c.dom.Element;
+
 import javax.swing.*;
 import java.awt.*;
 
-public class PanelDeplacement extends JPanel {
+public class PanelTransition extends JPanel {
 
     private final Frame frame;
 
-    public PanelDeplacement(Frame frame, Font font) {
+    public PanelTransition(Frame frame, Element dialoguesRoot, Font font) {
 
         this.frame = frame;
 

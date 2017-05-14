@@ -5,7 +5,7 @@ import org.w3c.dom.NodeList;
 
 public class Dialogue {
 
-    private final Replique[] repliques;
+    public final Replique[] repliques;
 
     private Dialogue(Replique[] repliques) {
         this.repliques = repliques;

@@ -5,22 +5,19 @@ import org.w3c.dom.NodeList;
 
 public class Replique {
 
-    final TypeReplique type;
-    final String[] phrases;
-    final Choix[] choix;
-    final int next;
+    public final String[] phrases;
+    public final Choix[] choix;
+    public final int next;
 
     private Replique(Choix[] choix) {
 
-        type = TypeReplique.CHOIX;
         phrases = null;
         this.choix = choix;
-        next = -1;
+        next = 0;
     }
 
     private Replique(String[] phrases, int next) {
 
-        type = TypeReplique.NORMAL;
         this.phrases = phrases;
         choix = null;
         this.next = next;

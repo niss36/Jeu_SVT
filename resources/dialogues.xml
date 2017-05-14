@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <dialogues>
-    <dialogue>
+    <dialogue><!--Follicule-->
         <replique next="1"><!--0-->
             <phrase texte="Hey !"/>
             <phrase texte="..."/>
@@ -20,12 +20,12 @@
             <choix texte="Hein ? Quel grand jour ?" next="4"/>
         </replique>
         <replique next="5"><!--4-->
-            <phrase texte="L'ovulation, bien sûr !"/>
-            <phrase texte="C'est aujourd'hui que tu vas être envoyé dans les trompes pour être fécondé !"/>
+            <phrase texte="L'ovulation, bien sûr ! C'est aujourd'hui que tu vas"/>
+            <phrase texte="être envoyé dans les trompes pour être fécondé !"/>
         </replique>
         <replique><!--5-->
             <choix texte="Ah non, je veux pas. Laisse-moi tranquille." next="6"/>
-            <choix texte="Ah, c'est enfin arrivé !"/>
+            <choix texte="Ah, c'est enfin arrivé !" next="9"/>
         </replique>
         <replique next="7"><!--6-->
             <phrase texte="Oh ! Je ne t'ai pas porté 14 jours pour rien !"/>
@@ -35,13 +35,89 @@
         <replique><!--7-->
             <choix texte="Bon, très bien..." next="8"/>
         </replique>
+        <replique next="12"><!--8-->
+            <phrase texte="Et puis, je vais même devoir sécréter de la progestérone"/>
+            <phrase texte="après ton départ pour permettre ta nidation."/>
+        </replique>
+        <replique next="10"><!--9-->
+            <phrase texte="Et oui : nous sommes le follicule qui a gagné"/>
+            <phrase texte="la course à la maturation en se développant"/>
+            <phrase texte="pendant ces 14 derniers jours."/>
+        </replique>
+        <replique><!--10-->
+            <choix texte="Mais, ça veut dire que je dois te quitter ?" next="11"/>
+            <choix texte="C'est génial, j'ai trop hâte !" next="11"/>
+        </replique>
+        <replique next="12"><!--11-->
+            <phrase texte="Et oui ! Le petit oisillon doit quitter le nid."/>
+            <phrase texte="Mais ne t'inquiète pas : je te soutiendrai en sécrétant"/>
+            <phrase texte="de la progestérone pour permettre ta nidation."/>
+        </replique>
+        <replique><!--12-->
+            <choix texte="Mais après, que va-t-il t'arriver ?" next="13"/>
+        </replique>
+        <replique next="-1">
+            <phrase texte="Je vais devenir un corps jaune, puis me dégrader."/>
+            <phrase texte="Mais ne t'en fais pas, cela fait partie de mon rôle."/>
+            <phrase texte="Il est l'heure, maintenant. Bonne chance !"/>
+        </replique><!--13-->
+    </dialogue>
+    <dialogue><!--Endomètre-->
+        <replique next="1"><!--0-->
+            <phrase texte="Ô mon pauvre ovule te voilà le témoin"/>
+            <phrase texte="D'un spectacle affligeant, détestable et sanglant,"/>
+            <phrase texte="Car on va me laisser dépérir sans le soin"/>
+            <phrase texte="Aide-moi je t'en prie, tu dois être clément..."/>
+        </replique>
+        <replique><!--1-->
+            <choix texte="Comment est-ce que je peux vous aider ?" next="4"/>
+            <choix texte="Laissez-moi passer, j'ai du travail !" next="2"/>
+        </replique>
+        <replique next="3"><!--2-->
+            <phrase texte="Vous me quitterez donc sans même me parler ?"/>
+            <phrase texte="Ne m’abandonnez pas, restez pour me servir."/>
+            <phrase texte="De cet endroit je vais très bientôt m’en aller,"/>
+            <phrase texte="Je suis toute aux malheurs, et ne pense aux plaisirs..."/>
+        </replique>
+        <replique><!--3-->
+            <choix texte="C'est bon, je vous écoute. Qu'est-ce qu'il vous arrive ?" next="4"/>
+        </replique>
+        <replique next="5"><!--4-->
+            <phrase texte="Tous les mois, chaque cycle, on me tue sans pitié,"/>
+            <phrase texte="C’est l’hormone de l’ovaire, le responsable,"/>
+            <phrase texte="Qui toujours me bannis, qui veut me châtier,"/>
+            <phrase texte="Pour une faute dont je suis pourtant graciable !"/>
+        </replique>
+        <replique><!--5-->
+            <choix texte="Mais laquelle ?" next="6"/>
+            <choix texte="Où est-ce que vous voulez en venir ?" next="6"/>
+        </replique>
+        <replique next="7"><!--6-->
+            <phrase texte="C’est une faute qui te regarde de près :"/>
+            <phrase texte="C’est à cause de toi si je suis dans l’état"/>
+            <phrase texte="Que tu vois. En effet, tu n’es pas fécondé,"/>
+            <phrase texte="Il n’y a que toi pour me tirer d’embarras !"/>
+        </replique>
+        <replique><!--7-->
+            <choix texte="Je vous aurais sauvé si j'avais été fécondé ?" next="8"/>
+            <choix texte="Ma vie ne vous regarde pas !" next="8"/>
+        </replique>
         <replique next="9"><!--8-->
-            <phrase texte="Et puis, je vais même devoir sécréter de la"/>
-            <phrase texte="progestérone après ton départ pour permettre"/>
-            <phrase texte="ta nidation."/>
+            <phrase texte="Après l’ovulation, je commence à grandir !"/>
+            <phrase texte="De nombreux vaisseaux sanguins irriguent mes flancs !"/>
+            <phrase texte="J’accueille l’embryon, il ne doit pas mourir,"/>
+            <phrase texte="Mais puisque tu es là tu me vois accablant..."/>
+        </replique>
+        <replique><!--9-->
+            <choix texte="Euh... Je ferai comme vous voudrez, ne vous inquiétez pas, au revoir !" next="10"/>
+            <choix texte="" next="10"/>
+        </replique>
+        <replique next="-1"><!--10-->
+            <phrase texte="Adieu mon cher ovule et prends bien garde à toi :"/>
+            <phrase texte="Tu es en danger, bientôt tu me rejoindras..."/>
         </replique>
     </dialogue>
-    <transition>
+    <!--<transition>
 
     </transition>
     <dialogue>
@@ -51,6 +127,6 @@
 
     </transition>
     <dialogue>
-        
-    </dialogue>
+
+    </dialogue>-->
 </dialogues>
