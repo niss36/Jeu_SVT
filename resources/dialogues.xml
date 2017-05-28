@@ -71,9 +71,81 @@
         <point x="106" y="85"/>
         <point x="128" y="88"/>
     </transition>
-    <dialogue>
-        <replique next="-1">
-            <phrase texte=""/>
+    <dialogue><!--Hypothalamus-->
+        <replique next="1"><!--0-->
+            <phrase texte="Salut petit."/>
+        </replique>
+        <replique><!--1-->
+            <choix texte="Qui êtes-vous ? Je ne vous vois pas..." next="2"/>
+        </replique>
+        <replique next="3"><!--2-->
+            <phrase texte="Je suis l’Hypothalamus, mais appelle moi monsieur H."/>
+            <phrase texte="Ici, je suis le maître ;"/>
+            <phrase texte="je règne sur l’utérus d’en haut, dans le cerveau."/>
+        </replique>
+        <replique><!--3-->
+            <choix texte="Vous mentez ! Comment pouvez vous me parler ?" next="4"/>
+            <choix texte="Et vous régnez tout seul?" next="5"/>
+        </replique>
+        <replique next="6"><!--4-->
+            <phrase texte="Eh! Parle mois sur un autre ton, gamin!"/>
+            <phrase texte="Tu serais même pas là sans moi."/>
+            <phrase texte="Arrête de te poser des questions comme ça,"/>
+            <phrase texte="écoute plutôt ce que j’ai à te dire :"/>
+            <phrase texte="je gère tout en sécrétant du GnRH."/>
+            <phrase texte="Ca me permet de communiquer avec mon sous-fifre :"/>
+            <phrase texte="l’hypophyse."/>
+        </replique>
+        <replique next="6"><!--5-->
+            <phrase texte="Bien sûr que non,"/>
+            <phrase texte="il me faut bien des subordonnés"/>
+            <phrase texte="pour s’occuper des problèmes sur place :"/>
+            <phrase texte="y'a l’hypophyse qui s’occupe de ce sale boulot."/>
+            <phrase texte="Moi je lui transmets mes ordres avec mes hormones GnRH"/>
+        </replique>
+        <replique><!--6-->
+            <choix texte="Et qu’est-ce qu’il fait cet hypophyse ?" next="7"/>
+            <choix texte="Ah d’accord, en fait vous ne faites rien vous..." next="8"/>
+        </replique>
+        <replique next="9"><!--7-->
+            <phrase texte="Bah lui, il sécrète des hormones FSH"/>
+            <phrase texte="pour gérer la croissance du follicule (de ta maman) et"/>
+            <phrase texte="des hormones LH pour la transformer en corps jaune après."/>
+            <phrase texte="C’est même lui qui t’a fait sortir d’elle"/>
+            <phrase texte="avec un pic de LH."/>
+        </replique>
+        <replique next="9"><!--8-->
+            <phrase texte="Encore une remarque désobligeante"/>
+            <phrase texte="et tu ne feras pas long feu toi."/>
+            <phrase texte="Je te l’ai dit : je transmets les ordres."/>
+            <phrase texte="Sans moi, l’hypophyse ne peut pas sécréter les hormones"/>
+            <phrase texte="FSH et LH,qui gèrent respectivement la croissance"/>
+            <phrase texte="et la transformation en corps jaune de ta maman."/>
+            <phrase texte="Les LH servent même à faire sortir tous les insolents"/>
+            <phrase texte="comme toi de leur mère."/>
+        </replique>
+        <replique><!--9-->
+            <choix texte="Donc vous faites toujours la même chose finalement." next="10"/>
+            <choix texte="Et vous ne vous ennuyez pas au bout d'un moment ?" next="11"/>
+        </replique>
+        <replique next="-1"><!--10-->
+            <phrase texte="Sûrement pas,"/>
+            <phrase texte="je dois aussi modifier mes ordres selon les demandes"/>
+            <phrase texte="que fait l’ovaire."/>
+            <phrase texte="Il faudrait pas non plus se retrouver avec trop de FSH"/>
+            <phrase texte="alors que le follicule s’est déjà transformé"/>
+            <phrase texte="en corps jaune par exemple,"/>
+            <phrase texte="ou inversement, tu n’as pas envie d’avoir des LH"/>
+            <phrase texte="alors que le follicule n’est même pas mature!"/>
+            <phrase texte=" Allez, va-t-en, j’ai plus rien à t’apprendre."/>
+        </replique>
+        <replique next="-1"><!--11-->
+            <phrase texte="Ca suffit là! Je dois aussi faire attention à l’ovaire moi!"/>
+            <phrase texte="Imagine que cet imbécile d’hypophyse lui envoie de la FSH"/>
+            <phrase texte="alors que le follicule est déjà transformé en corps jaune ;"/>
+            <phrase texte="ça serait la cata!"/>
+            <phrase texte="C’est moi qui doit gérer tout ça!"/>
+            <phrase texte="Comment un ovule peut me parler comme ça... déguerpis!"/>
         </replique>
     </dialogue>
     <transition>

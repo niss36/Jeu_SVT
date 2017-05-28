@@ -79,6 +79,6 @@ public class Frame extends JFrame {
 
         if (b)
 //        dialogue.showDialogue(0);
-        showDialogue(0);
+        showDialogue(1);
     }
 }
