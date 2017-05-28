@@ -70,5 +70,15 @@ public class Frame extends JFrame {
     public void showTransition(int index) {
 
         cl.show(getContentPane(), cards[TRANSITION]);
+        transition.showTransition(index);
+    }
+
+    @Override
+    public void setVisible(boolean b) {
+        super.setVisible(b);
+
+        if (b)
+//        dialogue.showDialogue(0);
+        showDialogue(0);
     }
 }

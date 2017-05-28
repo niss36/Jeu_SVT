@@ -22,6 +22,7 @@ public class PanelDialogue extends JPanel implements Runnable {
     private final Font bubbleFont;
     private final Dialogue[] dialogues;
     private final BufferedImage background;
+    private final BufferedImage ovule;
     private final BufferedImage bubble;
     private int currentDialogue;
     private int currentReplique;
@@ -44,6 +45,12 @@ public class PanelDialogue extends JPanel implements Runnable {
 
         try (InputStream stream = ClassLoader.getSystemResourceAsStream("bubble.png")) {
             bubble = ImageIO.read(stream);
+        } catch (IOException e) {
+            throw new RuntimeException(e);
+        }
+
+        try (InputStream stream = ClassLoader.getSystemResourceAsStream("ovule.png")) {
+            ovule = ImageIO.read(stream);
         } catch (IOException e) {
             throw new RuntimeException(e);
         }
@@ -124,6 +131,10 @@ public class PanelDialogue extends JPanel implements Runnable {
 
         try {
 
+            synchronized (waitLock) {
+                waitLock.wait();
+            }
+
             while (true) {
 
                 if (currentDialogue < dialogues.length) {
@@ -155,7 +166,6 @@ public class PanelDialogue extends JPanel implements Runnable {
                                     repaint();
                                 }
                             }
-
                         } else {
                             currentPhrase = 0;
                             synchronized (waitLock) {
@@ -175,9 +185,11 @@ public class PanelDialogue extends JPanel implements Runnable {
     protected void paintComponent(Graphics g) {
         super.paintComponent(g);
 
+        int scale = 4;
+
         g.drawImage(background, 0, 0, getWidth(), getHeight(), null);
 
-        int scale = 4;
+        g.drawImage(ovule, 726, 196, ovule.getWidth() * scale, ovule.getHeight() * scale, null);
 
         Replique replique = dialogues[currentDialogue].repliques[currentReplique];
 

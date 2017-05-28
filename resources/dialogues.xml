@@ -62,6 +62,41 @@
             <phrase texte="Il est l'heure, maintenant. Bonne chance !"/>
         </replique><!--13-->
     </dialogue>
+    <transition>
+        <point x="66" y="149"/>
+        <point x="58" y="136"/>
+        <point x="55" y="116"/>
+        <point x="64" y="99"/>
+        <point x="82" y="88"/>
+        <point x="106" y="85"/>
+        <point x="128" y="88"/>
+    </transition>
+    <dialogue>
+        <replique next="-1">
+            <phrase texte=""/>
+        </replique>
+    </dialogue>
+    <transition>
+        <point x="149" y="94"/>
+        <point x="168" y="99"/>
+        <point x="188" y="101"/>
+        <point x="205" y="102"/>
+        <point x="219" y="102"/>
+        <point x="233" y="100"/>
+        <point x="244" y="99"/>
+        <point x="260" y="96"/>
+        <point x="271" y="95"/>
+        <point x="279" y="95"/>
+        <point x="286" y="97"/>
+        <point x="298" y="104"/>
+        <point x="302" y="110"/>
+        <point x="306" y="116"/>
+        <point x="309" y="122"/>
+        <point x="309" y="129"/>
+        <point x="308" y="134"/>
+        <point x="306" y="138"/>
+        <point x="304" y="142"/>
+    </transition>
     <dialogue><!--Endomètre-->
         <replique next="1"><!--0-->
             <phrase texte="Ô mon pauvre ovule te voilà le témoin"/>
@@ -117,16 +152,4 @@
             <phrase texte="Tu es en danger, bientôt tu me rejoindras..."/>
         </replique>
     </dialogue>
-    <!--<transition>
-
-    </transition>
-    <dialogue>
-
-    </dialogue>
-    <transition>
-
-    </transition>
-    <dialogue>
-
-    </dialogue>-->
 </dialogues>
