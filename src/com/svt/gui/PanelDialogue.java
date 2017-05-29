@@ -24,6 +24,8 @@ public class PanelDialogue extends JPanel implements Runnable {
     private final BufferedImage background;
     private final BufferedImage ovule;
     private final BufferedImage bubble;
+    private final BufferedImage follicule;
+    private final BufferedImage endometre;
     private int currentDialogue;
     private int currentReplique;
     private int currentPhrase;
@@ -55,6 +57,18 @@ public class PanelDialogue extends JPanel implements Runnable {
             throw new RuntimeException(e);
         }
 
+        try (InputStream stream = ClassLoader.getSystemResourceAsStream("follicule.png")) {
+            follicule = ImageIO.read(stream);
+        } catch (IOException e) {
+            throw new RuntimeException(e);
+        }
+
+        try (InputStream stream = ClassLoader.getSystemResourceAsStream("endometre.png")) {
+            endometre = ImageIO.read(stream);
+        } catch (IOException e) {
+            throw new RuntimeException(e);
+        }
+
         KeyboardFocusManager.getCurrentKeyboardFocusManager().addKeyEventDispatcher(new KeyEventDispatcher() {
             @Override
             public boolean dispatchKeyEvent(KeyEvent e) {
@@ -67,7 +81,6 @@ public class PanelDialogue extends JPanel implements Runnable {
                             Replique replique = dialogues[currentDialogue].repliques[currentReplique];
                             if (replique.choix != null) {
                                 Choix choix = replique.choix[selectionIndex];
-                                System.out.println("Selected " + choix.texte);
                                 selectionIndex = 0;
                                 if (choix.next == -1) {
                                     PanelDialogue.this.frame.showTransition(currentDialogue);
@@ -149,9 +162,8 @@ public class PanelDialogue extends JPanel implements Runnable {
                         if (replique.choix == null) {
 
                             if (currentPhrase < replique.phrases.length) {
-                                System.out.println(replique.phrases[currentPhrase]);
                                 repaint();
-                                Thread.sleep(delay);
+                                Thread.sleep(delay + 20 * replique.phrases[currentPhrase].length());
                                 currentPhrase++;
                             } else {
                                 currentPhrase = 0;
@@ -190,6 +202,15 @@ public class PanelDialogue extends JPanel implements Runnable {
         g.drawImage(background, 0, 0, getWidth(), getHeight(), null);
 
         g.drawImage(ovule, 726, 196, ovule.getWidth() * scale, ovule.getHeight() * scale, null);
+
+        if (currentDialogue == 0) {
+
+            g.drawImage(follicule, 95, 0, follicule.getWidth() * 3, follicule.getHeight() * 3, null);
+
+        } else if (currentDialogue == 2) {
+
+            g.drawImage(endometre, 0, 0, endometre.getWidth() * scale, endometre.getHeight() * scale, null);
+        }
 
         Replique replique = dialogues[currentDialogue].repliques[currentReplique];
 

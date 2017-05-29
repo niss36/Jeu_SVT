@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="Jeu SVT:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/Jeu_SVT_jar</output-path>
+    <root id="archive" name="Jeu SVT.jar">
+      <element id="module-output" name="Jeu SVT" />
+    </root>
+  </artifact>
+</component>

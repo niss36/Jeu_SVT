@@ -127,16 +127,12 @@ public class PanelTransition extends JPanel implements Runnable {
             interpolated = new Point(ix, iy);
         } else interpolated = current;
 
-        System.out.println(interpolated);
-
         int scale = 2;
 
         int width = background.getWidth() * scale;
         int height = background.getHeight() * scale;
 
         Point origin = new Point(interpolated.x - getWidth() / 2, interpolated.y - getHeight() / 2);
-
-        System.out.println(origin);
 
         if (origin.x < 0)
             origin.x = 0;
@@ -146,8 +142,6 @@ public class PanelTransition extends JPanel implements Runnable {
             origin.x = width - getWidth();
         if (origin.y + getHeight() > height)
             origin.y = height - getHeight();
-
-        System.out.println(origin);
 
         g.drawImage(background, -origin.x, -origin.y, width, height, null);
 

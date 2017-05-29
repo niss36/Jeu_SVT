@@ -78,7 +78,6 @@ public class Frame extends JFrame {
         super.setVisible(b);
 
         if (b)
-//        dialogue.showDialogue(0);
-        showDialogue(0);
+            showDialogue(0);
     }
 }

@@ -31,9 +31,9 @@
             <phrase texte="Oh ! Je ne t'ai pas porté 14 jours pour rien !"/>
             <phrase texte="On a gagné la course contre les autres follicules."/>
             <phrase texte="Pendant cette phase folliculaire,"/>
-            <phrase texte="j'ai aussi du produire des oestrogenes"/>
-            <phrase texte="pour que l'endometre se developpe"/>
-            <phrase texte="et soit pres a t'acceuillir"/>
+            <phrase texte="j'ai aussi du produire des oestrogènes"/>
+            <phrase texte="pour que l'endometre se développe"/>
+            <phrase texte="et soit prêt à t'accueillir"/>
             <phrase texte="Maintenant, à toi de prendre tes responsabilités !"/>
         </replique>
         <replique><!--7-->
@@ -47,8 +47,8 @@
             <phrase texte="Et oui : nous sommes le follicule qui a gagné"/>
             <phrase texte="la course à la maturation en se développant"/>
             <phrase texte="pendant ces 14 derniers jours de phase folliculaire."/>
-            <phrase texte="C'est aussi grace a notre production d'eostrogene"/>
-            <phrase texte="que l'endometre s'est developpe et peut t'acceuillir"/>
+            <phrase texte="C'est aussi grâce a notre production d'eostrogènes"/>
+            <phrase texte="que l'endomètre s'est développé et peut t'accueillir"/>
         </replique>
         <replique><!--10-->
             <choix texte="Mais, ça veut dire que je dois te quitter ?" next="11"/>
@@ -58,8 +58,8 @@
             <phrase texte="Et oui ! Le petit oisillon doit quitter le nid."/>
             <phrase texte="Mais ne t'inquiète pas : je te soutiendrai en sécrétant"/>
             <phrase texte="de la progestérone pour permettre ta nidation"/>
-            <phrase texte="pendant la phase luteale, qui durera encore 14 jours"/>
-            <phrase texte="jusqu'a la fin du cycle"/>
+            <phrase texte="pendant la phase lutéale, qui durera encore 14 jours"/>
+            <phrase texte="jusqu'à la fin du cycle"/>
         </replique>
         <replique><!--12-->
             <choix texte="Mais après, que va-t-il t'arriver ?" next="13"/>
@@ -87,18 +87,18 @@
             <choix texte="Qui êtes-vous ? Je ne vous vois pas..." next="2"/>
         </replique>
         <replique next="3"><!--2-->
-            <phrase texte="Je suis l’Hypothalamus, mais appelle moi monsieur H."/>
-            <phrase texte="Ici, je suis le maître ;"/>
+            <phrase texte="Je suis l’Hypothalamus, mais appelle-moi monsieur H."/>
+            <phrase texte="Ici, je suis le maître;"/>
             <phrase texte="je règne sur l’utérus d’en haut, dans le cerveau."/>
         </replique>
         <replique><!--3-->
-            <choix texte="Vous mentez ! Comment pouvez vous me parler ?" next="4"/>
-            <choix texte="Et vous régnez tout seul?" next="5"/>
+            <choix texte="Menteur ! Vous ne pourriez pas me parler si vous étiez là-bas !" next="4"/>
+            <choix texte="Et vous régnez tout seul ?" next="5"/>
         </replique>
         <replique next="6"><!--4-->
-            <phrase texte="Eh! Parle mois sur un autre ton, gamin!"/>
+            <phrase texte="Eh ! Parle-moi sur un autre ton, gamin !"/>
             <phrase texte="Tu serais même pas là sans moi."/>
-            <phrase texte="Arrête de te poser des questions comme ça,"/>
+            <phrase texte="Arrête de poser des questions comme ça,"/>
             <phrase texte="écoute plutôt ce que j’ai à te dire :"/>
             <phrase texte="je gère tout en sécrétant du GnRH."/>
             <phrase texte="Ca me permet de communiquer avec mon sous-fifre :"/>
@@ -117,7 +117,7 @@
         </replique>
         <replique next="9"><!--7-->
             <phrase texte="Bah lui, il sécrète des hormones FSH"/>
-            <phrase texte="pour gérer la croissance du follicule (de ta maman) et"/>
+            <phrase texte="pour gérer la croissance du follicule, ta maman, et"/>
             <phrase texte="des hormones LH pour la transformer en corps jaune après."/>
             <phrase texte="C’est même lui qui t’a fait sortir d’elle"/>
             <phrase texte="avec un pic de LH."/>
@@ -133,8 +133,8 @@
             <phrase texte="comme toi de leur mère."/>
         </replique>
         <replique><!--9-->
-            <choix texte="Donc vous faites toujours la même chose finalement." next="10"/>
-            <choix texte="Et vous ne vous ennuyez pas au bout d'un moment ?" next="11"/>
+            <choix texte="En fait, vous ne faites que donner des ordres sans réfléchir." next="10"/>
+            <choix texte="Vous envoyez toujours les mêmes ordres, ça vous arrive de changer ?" next="11"/>
         </replique>
         <replique next="-1"><!--10-->
             <phrase texte="Sûrement pas,"/>
@@ -144,16 +144,16 @@
             <phrase texte="alors que le follicule s’est déjà transformé"/>
             <phrase texte="en corps jaune par exemple,"/>
             <phrase texte="ou inversement, tu n’as pas envie d’avoir des LH"/>
-            <phrase texte="alors que le follicule n’est même pas mature!"/>
-            <phrase texte=" Allez, va-t-en, j’ai plus rien à t’apprendre."/>
+            <phrase texte="alors que le follicule n’est même pas mature !"/>
+            <phrase texte="Allez, va-t-en, j’ai plus rien à t’apprendre."/>
         </replique>
         <replique next="-1"><!--11-->
-            <phrase texte="Ca suffit là! Je dois aussi faire attention à l’ovaire moi!"/>
+            <phrase texte="Ca suffit là ! Je dois aussi faire attention à l’ovaire moi !"/>
             <phrase texte="Imagine que cet imbécile d’hypophyse lui envoie de la FSH"/>
-            <phrase texte="alors que le follicule est déjà transformé en corps jaune ;"/>
-            <phrase texte="ça serait la cata!"/>
-            <phrase texte="C’est moi qui doit gérer tout ça!"/>
-            <phrase texte="Comment un ovule peut me parler comme ça... déguerpis!"/>
+            <phrase texte="alors que le follicule est déjà transformé en corps jaune;"/>
+            <phrase texte="ça serait la cata !"/>
+            <phrase texte="C’est moi qui doit gérer tout ça !"/>
+            <phrase texte="Comment un ovule peut me parler comme ça... déguerpis !"/>
         </replique>
     </dialogue>
     <transition>
@@ -200,7 +200,7 @@
         <replique next="5"><!--4-->
             <phrase texte="Tous les mois, chaque cycle, on me tue sans pitié,"/>
             <phrase texte="C’est l’hormone de l’ovaire, le responsable,"/>
-            <phrase texte="Qui toujours me bannis, qui veut me châtier,"/>
+            <phrase texte="Qui toujours me bannit, qui veut me châtier,"/>
             <phrase texte="Pour une faute dont je suis pourtant graciable !"/>
         </replique>
         <replique><!--5-->
@@ -225,7 +225,6 @@
         </replique>
         <replique><!--9-->
             <choix texte="Euh... Je ferai comme vous voudrez, ne vous inquiétez pas, au revoir !" next="10"/>
-            <choix texte="" next="10"/> <!-- euu ici pk y'a un choix ? -->
         </replique>
         <replique next="-1"><!--10-->
             <phrase texte="Adieu mon cher ovule et prends bien garde à toi :"/>
