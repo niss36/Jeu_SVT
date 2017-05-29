@@ -127,7 +127,7 @@ public class PanelDialogue extends JPanel implements Runnable {
     @Override
     public void run() {
 
-        int delay = 1000;
+        int delay = 2000;
 
         try {
 

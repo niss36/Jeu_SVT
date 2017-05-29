@@ -30,6 +30,10 @@
         <replique next="7"><!--6-->
             <phrase texte="Oh ! Je ne t'ai pas porté 14 jours pour rien !"/>
             <phrase texte="On a gagné la course contre les autres follicules."/>
+            <phrase texte="Pendant cette phase folliculaire,"/>
+            <phrase texte="j'ai aussi du produire des oestrogenes"/>
+            <phrase texte="pour que l'endometre se developpe"/>
+            <phrase texte="et soit pres a t'acceuillir"/>
             <phrase texte="Maintenant, à toi de prendre tes responsabilités !"/>
         </replique>
         <replique><!--7-->
@@ -42,7 +46,9 @@
         <replique next="10"><!--9-->
             <phrase texte="Et oui : nous sommes le follicule qui a gagné"/>
             <phrase texte="la course à la maturation en se développant"/>
-            <phrase texte="pendant ces 14 derniers jours."/>
+            <phrase texte="pendant ces 14 derniers jours de phase folliculaire."/>
+            <phrase texte="C'est aussi grace a notre production d'eostrogene"/>
+            <phrase texte="que l'endometre s'est developpe et peut t'acceuillir"/>
         </replique>
         <replique><!--10-->
             <choix texte="Mais, ça veut dire que je dois te quitter ?" next="11"/>
@@ -51,7 +57,9 @@
         <replique next="12"><!--11-->
             <phrase texte="Et oui ! Le petit oisillon doit quitter le nid."/>
             <phrase texte="Mais ne t'inquiète pas : je te soutiendrai en sécrétant"/>
-            <phrase texte="de la progestérone pour permettre ta nidation."/>
+            <phrase texte="de la progestérone pour permettre ta nidation"/>
+            <phrase texte="pendant la phase luteale, qui durera encore 14 jours"/>
+            <phrase texte="jusqu'a la fin du cycle"/>
         </replique>
         <replique><!--12-->
             <choix texte="Mais après, que va-t-il t'arriver ?" next="13"/>
@@ -217,7 +225,7 @@
         </replique>
         <replique><!--9-->
             <choix texte="Euh... Je ferai comme vous voudrez, ne vous inquiétez pas, au revoir !" next="10"/>
-            <choix texte="" next="10"/>
+            <choix texte="" next="10"/> <!-- euu ici pk y'a un choix ? -->
         </replique>
         <replique next="-1"><!--10-->
             <phrase texte="Adieu mon cher ovule et prends bien garde à toi :"/>
